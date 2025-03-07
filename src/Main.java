@@ -58,5 +58,14 @@ public class Main {
         System.out.println(frog = frog * 10);
         System.out.println(frog = frog / 3.5);
         System.out.println(frog + 4);
+
+        // Task 6
+        System.out.println("TASK 6");
+
+        var guy1 = 78.2;
+        var guy2 = 82.7;
+
+        System.out.println("Mass total: " + (guy1 + guy2) + " kg");
+        System.out.println("Mass diff: " + (Math.abs(guy1 - guy2)) + " kg");
     }
 }
