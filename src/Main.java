@@ -41,5 +41,13 @@ public class Main {
         System.out.println("Dog value: " + dog);
         System.out.println("Cat value: " + cat);
         System.out.println("Paper value: " + paper);
+
+        // Task 4
+        var friend = 19;
+
+        System.out.println("TASK 4");
+        System.out.println(friend);
+        System.out.println(friend = friend + 2);
+        System.out.println(friend / 7);
     }
 }
