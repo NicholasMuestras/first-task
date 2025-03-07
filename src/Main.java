@@ -11,5 +11,14 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+
+        // Task 1
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763789;
+
+        System.out.println("Dog value: " + dog);
+        System.out.println("Cat value: " + cat);
+        System.out.println("Paper value: " + paper);
     }
 }
