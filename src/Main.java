@@ -67,5 +67,9 @@ public class Main {
 
         System.out.println("Mass total: " + (guy1 + guy2) + " kg");
         System.out.println("Mass diff: " + (Math.abs(guy1 - guy2)) + " kg");
+
+        // Task 7
+        System.out.println("TASK 7");
+        System.out.println(guy1 > guy2 ? guy1 % guy2 : guy2 % guy1);
     }
 }
