@@ -17,6 +17,17 @@ public class Main {
         var cat = 3.6;
         var paper = 763789;
 
+        System.out.println("TASK 1");
+        System.out.println("Dog value: " + dog);
+        System.out.println("Cat value: " + cat);
+        System.out.println("Paper value: " + paper);
+
+        // Task 2
+        dog = dog + 4;
+        cat = cat + 4;
+        paper = paper + 4;
+
+        System.out.println("TASK 2");
         System.out.println("Dog value: " + dog);
         System.out.println("Cat value: " + cat);
         System.out.println("Paper value: " + paper);
