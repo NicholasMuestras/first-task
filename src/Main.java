@@ -71,5 +71,17 @@ public class Main {
         // Task 7
         System.out.println("TASK 7");
         System.out.println(guy1 > guy2 ? guy1 % guy2 : guy2 % guy1);
+
+        // Task 8
+        System.out.println("TASK 8");
+
+        var totalCapacity = 640;
+        var employerCapacity = 8;
+        var employersCount = totalCapacity / employerCapacity;
+        var increasedEmployersCount = employersCount + 94;
+        var increasedTotalCapacity = increasedEmployersCount * employerCapacity;
+
+        System.out.println("Employers total (body): " + employersCount);
+        System.out.println("If employers count: " + increasedEmployersCount + " then capacity available (hour): " + increasedTotalCapacity);
     }
 }
