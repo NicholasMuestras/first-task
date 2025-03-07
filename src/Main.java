@@ -49,5 +49,14 @@ public class Main {
         System.out.println(friend);
         System.out.println(friend = friend + 2);
         System.out.println(friend / 7);
+
+        // Task 5
+        var frog = 3.5;
+
+        System.out.println("TASK 5");
+        System.out.println(frog);
+        System.out.println(frog = frog * 10);
+        System.out.println(frog = frog / 3.5);
+        System.out.println(frog + 4);
     }
 }
