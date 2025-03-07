@@ -31,5 +31,15 @@ public class Main {
         System.out.println("Dog value: " + dog);
         System.out.println("Cat value: " + cat);
         System.out.println("Paper value: " + paper);
+
+        // Task 3
+        dog = dog - 3.5;
+        cat = cat - 1.6;
+        paper = paper - 7639;
+
+        System.out.println("TASK 3");
+        System.out.println("Dog value: " + dog);
+        System.out.println("Cat value: " + cat);
+        System.out.println("Paper value: " + paper);
     }
 }
