@@ -98,7 +98,7 @@ public class Main {
         System.out.println("If employers count: " + increasedEmployersCount + " then capacity available (hour): " + increasedTotalCapacity);
         System.out.println();
 
-        // Homework 3
+        // Homework 2
 
         System.out.println("TASK 1");
 
@@ -115,6 +115,19 @@ public class Main {
         System.out.println("Variable: name 'counter', type 'long', value " + counter);
         System.out.println("Variable: name 'progress', type 'float', value " + progress);
         System.out.println("Variable: name 'longitude', type 'double', value " + longitude);
+        System.out.println();
+
+        System.out.println("TASK 2");
+
+        float variableOne = 27.12F;
+        long variableTwo = 987678965549L;
+        float variableThree = 2.786F; /* OR 'char variableThree = "2,786";' ? */
+        short variableFour = 569;
+        short variableFive = -159;
+        short variableSix = 27897;
+        byte variableSeven = 67;
+
+        // nothing output
         System.out.println();
     }
 }
