@@ -127,7 +127,22 @@ public class Main {
         short variableSix = 27897;
         byte variableSeven = 67;
 
-        // nothing output
+        // nothing output according the task
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        short sheetsTotal = 480;
+        byte countOfStudentsLudmilaPavlovna = 23;
+        byte countOfStudentsAnnaSergeevna = 27;
+        byte countOfStudentsEkaterinaAndreevna = 30;
+        byte studentsTotal;
+        byte sheetsPerStudent;
+
+        studentsTotal = (byte) (countOfStudentsLudmilaPavlovna + countOfStudentsAnnaSergeevna + countOfStudentsEkaterinaAndreevna);
+        sheetsPerStudent = (byte) (sheetsTotal / studentsTotal);
+
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
         System.out.println();
     }
 }
