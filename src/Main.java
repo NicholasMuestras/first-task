@@ -96,5 +96,25 @@ public class Main {
 
         System.out.println("Employers total (body): " + employersCount);
         System.out.println("If employers count: " + increasedEmployersCount + " then capacity available (hour): " + increasedTotalCapacity);
+        System.out.println();
+
+        // Homework 3
+
+        System.out.println("TASK 1");
+
+        int weight = 56500;
+        byte age = 17;
+        short totalDevices = 5000;
+        long counter = 6;
+        float progress = 99.6F;
+        double longitude = 55.7558334867541;
+
+        System.out.println("Variable: name 'weight', type 'int', value " + weight);
+        System.out.println("Variable: name 'age', type 'byte', value " + age);
+        System.out.println("Variable: name 'totalDevices', type 'short', value " + totalDevices);
+        System.out.println("Variable: name 'counter', type 'long', value " + counter);
+        System.out.println("Variable: name 'progress', type 'float', value " + progress);
+        System.out.println("Variable: name 'longitude', type 'double', value " + longitude);
+        System.out.println();
     }
 }
