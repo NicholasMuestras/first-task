@@ -144,5 +144,26 @@ public class Main {
 
         System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        byte itemsPerMinute;
+        byte itemsPerTwoMinutes = 16;
+        short itemsPerTwentyMinutes;
+        int itemsPerOneDay;
+        int itemsPerThreeDays;
+        int itemsPerThirtyDays;
+
+        itemsPerMinute = (byte) (itemsPerTwoMinutes / 2);
+        itemsPerTwentyMinutes = (short) (itemsPerMinute * 20);
+        itemsPerOneDay = itemsPerMinute * 60 * 24;
+        itemsPerThreeDays = itemsPerOneDay * 3;
+        itemsPerThirtyDays = itemsPerOneDay * 30;
+
+        System.out.println("За 20 минут машина произвела " + itemsPerTwentyMinutes + " штук бутылок");
+        System.out.println("За 1 день машина произвела " + itemsPerOneDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + itemsPerThreeDays + " штук бутылок");
+        System.out.println("За 30 дней машина произвела " + itemsPerThirtyDays + " штук бутылок");
+        System.out.println();
     }
 }
