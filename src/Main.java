@@ -98,7 +98,7 @@ public class Main {
         System.out.println("If employers count: " + increasedEmployersCount + " then capacity available (hour): " + increasedTotalCapacity);
         System.out.println();
 
-        // Homework 2
+        // Homework 3
 
         System.out.println("TASK 1");
 
@@ -164,6 +164,22 @@ public class Main {
         System.out.println("За 1 день машина произвела " + itemsPerOneDay + " штук бутылок");
         System.out.println("За 3 дня машина произвела " + itemsPerThreeDays + " штук бутылок");
         System.out.println("За 30 дней машина произвела " + itemsPerThirtyDays + " штук бутылок");
+        System.out.println();
+
+        System.out.println("TASK 5");
+
+        byte paintTotal = 120;
+        byte paintWhiteConsumption = 2;
+        byte paintBrownConsumption = 4;
+        byte roomsTotal;
+        byte paintWhiteRequired;
+        byte paintBrownRequired;
+
+        roomsTotal = (byte) (paintTotal / (paintWhiteConsumption + paintBrownConsumption));
+        paintWhiteRequired = (byte) (paintWhiteConsumption * roomsTotal);
+        paintBrownRequired = (byte) (paintBrownConsumption * roomsTotal);
+
+        System.out.println("В школе, где " + roomsTotal + " классов, нужно " + paintWhiteRequired + " банок белой краски и " + paintBrownRequired + " банок коричневой краски");
         System.out.println();
     }
 }
