@@ -179,7 +179,26 @@ public class Main {
         paintWhiteRequired = (byte) (paintWhiteConsumption * roomsTotal);
         paintBrownRequired = (byte) (paintBrownConsumption * roomsTotal);
 
-        System.out.println("В школе, где " + roomsTotal + " классов, нужно " + paintWhiteRequired + " банок белой краски и " + paintBrownRequired + " банок коричневой краски");
+        System.out.println("В школе, где " + roomsTotal + " классов, нужно " + paintWhiteRequired
+                + " банок белой краски и " + paintBrownRequired + " банок коричневой краски");
+        System.out.println();
+
+        System.out.println("TASK 6");
+
+        short weightTotalGram;
+        float weightTotalKGram;
+
+        // One item weight in gram.
+        byte weightBanana = 80;
+        byte weightMilk = 105;  // 100 ml
+        byte weightIceCream = 100;
+        byte weightEgg = 70;
+
+        weightTotalGram = (short) (weightBanana * 5 + weightMilk * 2 + weightIceCream * 2 + weightEgg * 4);
+        weightTotalKGram = (float) (weightTotalGram / 1000);
+
+        System.out.println("Breakfast weight in gram: " + weightTotalGram);
+        System.out.println("Breakfast weight in Kgram: " + weightTotalKGram);
         System.out.println();
     }
 }
