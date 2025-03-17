@@ -211,13 +211,59 @@ public class Main {
         short minLostPerDay = 250;
         short maxLostPerDay = 500;
 
-        minLostDynamic =  (short) Math.round((float) (weightLoseGoal / minLostPerDay));
+        minLostDynamic = (short) Math.round((float) (weightLoseGoal / minLostPerDay));
         maxLostDynamic = (short) Math.round((float) (weightLoseGoal / maxLostPerDay));
         averageLostDynamic = (short) Math.round((float) (weightLoseGoal / ((minLostPerDay + maxLostPerDay) / 2)));
 
         System.out.println("Minimum weight lost dynamic in days: " + minLostDynamic);
         System.out.println("Maximum weight lost dynamic in days: " + maxLostDynamic);
         System.out.println("Average weight lost dynamic in days: " + averageLostDynamic);
+        System.out.println();
+
+        System.out.println("TASK 8");
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+
+        float coefficient = 1.1F;
+        int periodInMonths = 12;
+
+        int salaryPerYearMasha;
+        int salaryPerYearDenis;
+        int salaryPerYearKristina;
+
+        double salaryIncreasedMasha;
+        double salaryIncreasedDenis;
+        double salaryIncreasedKristina;
+
+        double salaryIncreasedPerYearMasha;
+        double salaryIncreasedPerYearDenis;
+        double salaryIncreasedPerYearKristina;
+
+        double salaryDiffPerYearMasha;
+        double salaryDiffPerYearDenis;
+        double salaryDiffPerYearKristina;
+
+        salaryIncreasedMasha = salaryMasha * coefficient;
+        salaryIncreasedDenis = salaryDenis * coefficient;
+        salaryIncreasedKristina = salaryKristina * coefficient;
+
+        salaryPerYearMasha = salaryMasha * periodInMonths;
+        salaryPerYearDenis = salaryDenis * periodInMonths;
+        salaryPerYearKristina = salaryKristina * periodInMonths;
+
+        salaryIncreasedPerYearMasha = salaryIncreasedMasha * periodInMonths;
+        salaryIncreasedPerYearDenis = salaryIncreasedDenis * periodInMonths;
+        salaryIncreasedPerYearKristina = salaryIncreasedKristina * periodInMonths;
+
+        salaryDiffPerYearMasha = salaryIncreasedPerYearMasha - salaryPerYearMasha;
+        salaryDiffPerYearDenis = salaryIncreasedPerYearDenis - salaryPerYearDenis;
+        salaryDiffPerYearKristina = salaryIncreasedPerYearKristina - salaryPerYearKristina;
+
+        System.out.println("Маша теперь получает " + salaryIncreasedMasha + " рублей. Годовой доход вырос на " + salaryDiffPerYearMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryIncreasedDenis + " рублей. Годовой доход вырос на " + salaryDiffPerYearDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryIncreasedKristina + " рублей. Годовой доход вырос на " + salaryDiffPerYearKristina + " рублей");
         System.out.println();
     }
 }
