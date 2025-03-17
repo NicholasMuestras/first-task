@@ -198,7 +198,26 @@ public class Main {
         weightTotalKGram = (float) (weightTotalGram / 1000);
 
         System.out.println("Breakfast weight in gram: " + weightTotalGram);
-        System.out.println("Breakfast weight in Kgram: " + weightTotalKGram);
+        System.out.println("Breakfast weight in Kg: " + weightTotalKGram);
+        System.out.println();
+
+        System.out.println("TASK 7");
+
+        short minLostDynamic;
+        short maxLostDynamic;
+        short averageLostDynamic;
+
+        short weightLoseGoal = 7000;
+        short minLostPerDay = 250;
+        short maxLostPerDay = 500;
+
+        minLostDynamic =  (short) Math.round((float) (weightLoseGoal / minLostPerDay));
+        maxLostDynamic = (short) Math.round((float) (weightLoseGoal / maxLostPerDay));
+        averageLostDynamic = (short) Math.round((float) (weightLoseGoal / ((minLostPerDay + maxLostPerDay) / 2)));
+
+        System.out.println("Minimum weight lost dynamic in days: " + minLostDynamic);
+        System.out.println("Maximum weight lost dynamic in days: " + maxLostDynamic);
+        System.out.println("Average weight lost dynamic in days: " + averageLostDynamic);
         System.out.println();
     }
 }
