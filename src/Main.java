@@ -281,5 +281,17 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 2");
+
+        byte temperature = 5;
+
+        if (temperature < 5) {
+            System.out.print("На улице " + temperature + " градусов, нужно надеть шапку");
+        } else {
+            System.out.print("На улице " + temperature + " градусов, можно идти без шапки");
+        }
+
+        System.out.println();
     }
 }
