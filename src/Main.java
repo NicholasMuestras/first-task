@@ -96,5 +96,174 @@ public class Main {
 
         System.out.println("Employers total (body): " + employersCount);
         System.out.println("If employers count: " + increasedEmployersCount + " then capacity available (hour): " + increasedTotalCapacity);
+        System.out.println();
+
+        // Homework 3
+
+        System.out.println("TASK 1");
+
+        int weight = 56500;
+        byte age = 17;
+        short totalDevices = 5000;
+        long counter = 6;
+        float progress = 99.6F;
+        double longitude = 55.7558334867541;
+
+        System.out.println("Variable: name 'weight', type 'int', value " + weight);
+        System.out.println("Variable: name 'age', type 'byte', value " + age);
+        System.out.println("Variable: name 'totalDevices', type 'short', value " + totalDevices);
+        System.out.println("Variable: name 'counter', type 'long', value " + counter);
+        System.out.println("Variable: name 'progress', type 'float', value " + progress);
+        System.out.println("Variable: name 'longitude', type 'double', value " + longitude);
+        System.out.println();
+
+        System.out.println("TASK 2");
+
+        float variableOne = 27.12F;
+        long variableTwo = 987678965549L;
+        float variableThree = 2.786F; /* OR 'char variableThree = "2,786";' ? */
+        short variableFour = 569;
+        short variableFive = -159;
+        short variableSix = 27897;
+        byte variableSeven = 67;
+
+        // nothing output according the task
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        short sheetsTotal = 480;
+        byte countOfStudentsLudmilaPavlovna = 23;
+        byte countOfStudentsAnnaSergeevna = 27;
+        byte countOfStudentsEkaterinaAndreevna = 30;
+        byte studentsTotal;
+        byte sheetsPerStudent;
+
+        studentsTotal = (byte) (countOfStudentsLudmilaPavlovna + countOfStudentsAnnaSergeevna + countOfStudentsEkaterinaAndreevna);
+        sheetsPerStudent = (byte) (sheetsTotal / studentsTotal);
+
+        System.out.println("На каждого ученика рассчитано " + sheetsPerStudent + " листов бумаги");
+        System.out.println();
+
+        System.out.println("TASK 4");
+
+        byte itemsPerMinute;
+        byte itemsPerTwoMinutes = 16;
+        short itemsPerTwentyMinutes;
+        int itemsPerOneDay;
+        int itemsPerThreeDays;
+        int itemsPerThirtyDays;
+
+        itemsPerMinute = (byte) (itemsPerTwoMinutes / 2);
+        itemsPerTwentyMinutes = (short) (itemsPerMinute * 20);
+        itemsPerOneDay = itemsPerMinute * 60 * 24;
+        itemsPerThreeDays = itemsPerOneDay * 3;
+        itemsPerThirtyDays = itemsPerOneDay * 30;
+
+        System.out.println("За 20 минут машина произвела " + itemsPerTwentyMinutes + " штук бутылок");
+        System.out.println("За 1 день машина произвела " + itemsPerOneDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + itemsPerThreeDays + " штук бутылок");
+        System.out.println("За 30 дней машина произвела " + itemsPerThirtyDays + " штук бутылок");
+        System.out.println();
+
+        System.out.println("TASK 5");
+
+        byte paintTotal = 120;
+        byte paintWhiteConsumption = 2;
+        byte paintBrownConsumption = 4;
+        byte roomsTotal;
+        byte paintWhiteRequired;
+        byte paintBrownRequired;
+
+        roomsTotal = (byte) (paintTotal / (paintWhiteConsumption + paintBrownConsumption));
+        paintWhiteRequired = (byte) (paintWhiteConsumption * roomsTotal);
+        paintBrownRequired = (byte) (paintBrownConsumption * roomsTotal);
+
+        System.out.println("В школе, где " + roomsTotal + " классов, нужно " + paintWhiteRequired
+                + " банок белой краски и " + paintBrownRequired + " банок коричневой краски");
+        System.out.println();
+
+        System.out.println("TASK 6");
+
+        short weightTotalGram;
+        float weightTotalKGram;
+
+        // One item weight in gram.
+        byte weightBanana = 80;
+        byte weightMilk = 105;  // 100 ml
+        byte weightIceCream = 100;
+        byte weightEgg = 70;
+
+        weightTotalGram = (short) (weightBanana * 5 + weightMilk * 2 + weightIceCream * 2 + weightEgg * 4);
+        weightTotalKGram = (float) (weightTotalGram / 1000);
+
+        System.out.println("Breakfast weight in gram: " + weightTotalGram);
+        System.out.println("Breakfast weight in Kg: " + weightTotalKGram);
+        System.out.println();
+
+        System.out.println("TASK 7");
+
+        short minLostDynamic;
+        short maxLostDynamic;
+        short averageLostDynamic;
+
+        short weightLoseGoal = 7000;
+        short minLostPerDay = 250;
+        short maxLostPerDay = 500;
+
+        minLostDynamic = (short) Math.round((float) (weightLoseGoal / minLostPerDay));
+        maxLostDynamic = (short) Math.round((float) (weightLoseGoal / maxLostPerDay));
+        averageLostDynamic = (short) Math.round((float) (weightLoseGoal / ((minLostPerDay + maxLostPerDay) / 2)));
+
+        System.out.println("Minimum weight lost dynamic in days: " + minLostDynamic);
+        System.out.println("Maximum weight lost dynamic in days: " + maxLostDynamic);
+        System.out.println("Average weight lost dynamic in days: " + averageLostDynamic);
+        System.out.println();
+
+        System.out.println("TASK 8");
+
+        int salaryMasha = 67760;
+        int salaryDenis = 83690;
+        int salaryKristina = 76230;
+
+        float coefficient = 1.1F;
+        int periodInMonths = 12;
+
+        int salaryPerYearMasha;
+        int salaryPerYearDenis;
+        int salaryPerYearKristina;
+
+        double salaryIncreasedMasha;
+        double salaryIncreasedDenis;
+        double salaryIncreasedKristina;
+
+        double salaryIncreasedPerYearMasha;
+        double salaryIncreasedPerYearDenis;
+        double salaryIncreasedPerYearKristina;
+
+        double salaryDiffPerYearMasha;
+        double salaryDiffPerYearDenis;
+        double salaryDiffPerYearKristina;
+
+        salaryIncreasedMasha = salaryMasha * coefficient;
+        salaryIncreasedDenis = salaryDenis * coefficient;
+        salaryIncreasedKristina = salaryKristina * coefficient;
+
+        salaryPerYearMasha = salaryMasha * periodInMonths;
+        salaryPerYearDenis = salaryDenis * periodInMonths;
+        salaryPerYearKristina = salaryKristina * periodInMonths;
+
+        salaryIncreasedPerYearMasha = salaryIncreasedMasha * periodInMonths;
+        salaryIncreasedPerYearDenis = salaryIncreasedDenis * periodInMonths;
+        salaryIncreasedPerYearKristina = salaryIncreasedKristina * periodInMonths;
+
+        salaryDiffPerYearMasha = salaryIncreasedPerYearMasha - salaryPerYearMasha;
+        salaryDiffPerYearDenis = salaryIncreasedPerYearDenis - salaryPerYearDenis;
+        salaryDiffPerYearKristina = salaryIncreasedPerYearKristina - salaryPerYearKristina;
+
+        System.out.println("Маша теперь получает " + salaryIncreasedMasha + " рублей. Годовой доход вырос на " + salaryDiffPerYearMasha + " рублей");
+        System.out.println("Денис теперь получает " + salaryIncreasedDenis + " рублей. Годовой доход вырос на " + salaryDiffPerYearDenis + " рублей");
+        System.out.println("Кристина теперь получает " + salaryIncreasedKristina + " рублей. Годовой доход вырос на " + salaryDiffPerYearKristina + " рублей");
+        System.out.println();
     }
 }
