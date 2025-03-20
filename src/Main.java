@@ -305,5 +305,25 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        byte humanAge = 40;
+
+        System.out.print("Если возраст человека равен " + humanAge + ", то ему нужно ходить ");
+
+        if (humanAge >= 2 && humanAge <= 6) {
+            System.out.println("в детский сад");
+        } else if (humanAge >= 7 && humanAge <= 17) {
+            System.out.println("в школу");
+        } else if (humanAge >= 18 && humanAge <= 24) {
+            System.out.println("в университет");
+        } else if (humanAge > 24) {
+            System.out.println("на работу");
+        } else {
+            System.out.println("... ему просто нужно ходить");
+        }
+
+        System.out.println();
     }
 }
