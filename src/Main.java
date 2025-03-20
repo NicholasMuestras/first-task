@@ -293,5 +293,17 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 3");
+
+        byte speedCurrent = 60;
+
+        if (speedCurrent > 60) {
+            System.out.print("Если скорость " + speedCurrent + ", то придется заплатить штраф");
+        } else {
+            System.out.print("Если скорость " + speedCurrent + ", то можно ездить спокойно");
+        }
+
+        System.out.println();
     }
 }
