@@ -265,5 +265,21 @@ public class Main {
         System.out.println("Денис теперь получает " + salaryIncreasedDenis + " рублей. Годовой доход вырос на " + salaryDiffPerYearDenis + " рублей");
         System.out.println("Кристина теперь получает " + salaryIncreasedKristina + " рублей. Годовой доход вырос на " + salaryDiffPerYearKristina + " рублей");
         System.out.println();
+
+        // Homework 4
+
+        System.out.println("TASK 1");
+
+        byte personAge = 10;
+
+        System.out.print("Если возраст человека равен " + personAge + ", то он ");
+
+        if (personAge > 17) {
+            System.out.print("совершеннолетний");
+        } else {
+            System.out.print("не достиг совершеннолетия, нужно немного подождать");
+        }
+
+        System.out.println();
     }
 }
