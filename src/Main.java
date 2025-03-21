@@ -376,5 +376,27 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 7");
+
+        int one = 1;
+        int two = 2;
+        int three = 3;
+
+        if (one > two) {
+            if (one > three) {
+                System.out.println("Число one наибольшее: " + one);
+            } else {
+                System.out.println("Число three наибольшее: " + three);
+            }
+        } else {
+            if (two > three) {
+                System.out.println("Число two наибольшее: " + two);
+            } else {
+                System.out.println("Число three наибольшее: " + three);
+            }
+        }
+
+        System.out.println();
     }
 }
