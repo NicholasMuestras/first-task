@@ -346,5 +346,35 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 6");
+
+        int ticketsToSitSoldOut = 58;
+        int ticketsToStandSoldOut = 39;
+
+        byte wagonCapacity = 102;
+        byte sitPlaces = 60;
+        byte standPlaces = (byte)(wagonCapacity - sitPlaces);
+
+        byte sitPlacesAvailable = (byte)(sitPlaces - ticketsToSitSoldOut);
+        byte standPlacesAvailable = (byte)(standPlaces - ticketsToStandSoldOut);
+
+        if (sitPlacesAvailable > 0) {
+            System.out.println("В вагоне доступно " + sitPlacesAvailable + " сидячих мест");
+        } else {
+            System.out.println("В вагоне заняты все сидячие места");
+        }
+
+        if (standPlacesAvailable > 0) {
+            System.out.println("В вагоне доступно " + standPlacesAvailable + " стоячих мест");
+        } else {
+            System.out.println("В вагоне заняты все стоячие места");
+        }
+
+        if (sitPlacesAvailable < 1 && standPlacesAvailable < 1) {
+            System.out.println("Вагон уже полностью забит");
+        }
+
+        System.out.println();
     }
 }
