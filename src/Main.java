@@ -412,5 +412,26 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 2");
+
+        byte mobileClientOS = 0; // 0 — iOS, 1 — Android
+        short clientDeviceYear = 2014;
+
+        if (mobileClientOS == 0) {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            }
+        } else {
+            if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            }
+        }
+
+        System.out.println();
     }
 }
