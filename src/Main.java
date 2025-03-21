@@ -488,5 +488,36 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 5");
+
+        byte monthNumber = 0;
+
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("принадлежит к сезону зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("принадлежит к сезону весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("принадлежит к сезону лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("принадлежит к сезону осень");
+                break;
+            default:
+                throw new RuntimeException("Номер месяца меньше 1 или больше 12, программа не будет выполняться");
+        }
+
+        System.out.println();
     }
 }
