@@ -398,5 +398,19 @@ public class Main {
         }
 
         System.out.println();
+
+        // Homework 5
+
+        System.out.println("TASK 1");
+
+        byte clientOS = 1; // 0 — iOS, 1 — Android
+
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
     }
 }
