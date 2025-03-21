@@ -465,5 +465,28 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        int deliveryDistance = 95; // km
+        byte deliveryTime;
+
+        if (deliveryDistance < 20) {
+            deliveryTime = 1;
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            deliveryTime = 2;
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            deliveryTime = 3;
+        } else {
+            deliveryTime = 0;
+        }
+
+        if (deliveryTime == 0) {
+            System.out.println("Свыше 100 км доставки нет");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryTime);
+        }
+
+        System.out.println();
     }
 }
