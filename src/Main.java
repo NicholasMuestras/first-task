@@ -325,5 +325,26 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 5");
+
+        byte clientAge = 5;
+        boolean hasClientAdult = true;
+
+        System.out.print("Если возраст ребенка равен " + clientAge + ", то ему ");
+
+        if (clientAge < 5) {
+            System.out.println("нельзя кататься на аттракционе");
+        } else if (clientAge >= 5 && clientAge < 14) {
+            if (hasClientAdult) {
+                System.out.println("можно кататься на аттракционе в сопровождении взрослого");
+            } else {
+                System.out.println("нельзя кататься на аттракционе без сопровождения взрослого");
+            }
+        } else {
+            System.out.println("можно кататься на аттракционе");
+        }
+
+        System.out.println();
     }
 }
