@@ -354,10 +354,10 @@ public class Main {
 
         byte wagonCapacity = 102;
         byte sitPlaces = 60;
-        byte standPlaces = (byte)(wagonCapacity - sitPlaces);
+        byte standPlaces = (byte) (wagonCapacity - sitPlaces);
 
-        byte sitPlacesAvailable = (byte)(sitPlaces - ticketsToSitSoldOut);
-        byte standPlacesAvailable = (byte)(standPlaces - ticketsToStandSoldOut);
+        byte sitPlacesAvailable = (byte) (sitPlaces - ticketsToSitSoldOut);
+        byte standPlacesAvailable = (byte) (standPlaces - ticketsToStandSoldOut);
 
         if (sitPlacesAvailable > 0) {
             System.out.println("В вагоне доступно " + sitPlacesAvailable + " сидячих мест");
@@ -430,6 +430,38 @@ public class Main {
             } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        short year = 2021;
+        boolean leapYear;
+        int remainderFromFourHundred;
+        int remainderFromOneHundred;
+        int remainderFromFour;
+
+        remainderFromFourHundred = year % 400;
+        remainderFromOneHundred = year % 100;
+        remainderFromFour = year % 4;
+
+        if (year < 1584) {
+            leapYear = false;
+        } else if (remainderFromFourHundred == 0) {
+            leapYear = true;
+        } else if (remainderFromOneHundred == 0 && remainderFromFourHundred > 0) {
+            leapYear = false;
+        } else if (remainderFromFour == 0 && remainderFromOneHundred > 0) {
+            leapYear = true;
+        } else {
+            leapYear = false;
+        }
+
+        if (leapYear) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
         }
 
         System.out.println();
