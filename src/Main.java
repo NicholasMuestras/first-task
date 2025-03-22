@@ -354,10 +354,10 @@ public class Main {
 
         byte wagonCapacity = 102;
         byte sitPlaces = 60;
-        byte standPlaces = (byte)(wagonCapacity - sitPlaces);
+        byte standPlaces = (byte) (wagonCapacity - sitPlaces);
 
-        byte sitPlacesAvailable = (byte)(sitPlaces - ticketsToSitSoldOut);
-        byte standPlacesAvailable = (byte)(standPlaces - ticketsToStandSoldOut);
+        byte sitPlacesAvailable = (byte) (sitPlaces - ticketsToSitSoldOut);
+        byte standPlacesAvailable = (byte) (standPlaces - ticketsToStandSoldOut);
 
         if (sitPlacesAvailable > 0) {
             System.out.println("В вагоне доступно " + sitPlacesAvailable + " сидячих мест");
@@ -395,6 +395,123 @@ public class Main {
             } else {
                 System.out.println("Число three наибольшее: " + three);
             }
+        }
+
+        System.out.println();
+
+        // Homework 5
+
+        System.out.println("TASK 1");
+
+        byte clientOS = 1; // 0 — iOS, 1 — Android
+
+        if (clientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 2");
+
+        byte mobileClientOS = 0; // 0 — iOS, 1 — Android
+        short clientDeviceYear = 2014;
+
+        if (mobileClientOS == 0 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 1 && clientDeviceYear < 2015) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        short year = 2021;
+        boolean leapYear;
+        int remainderFromFourHundred;
+        int remainderFromOneHundred;
+        int remainderFromFour;
+
+        remainderFromFourHundred = year % 400;
+        remainderFromOneHundred = year % 100;
+        remainderFromFour = year % 4;
+
+        if (year < 1584) {
+            leapYear = false;
+        } else if (remainderFromFourHundred == 0) {
+            leapYear = true;
+        } else if (remainderFromOneHundred == 0 && remainderFromFourHundred > 0) {
+            leapYear = false;
+        } else if (remainderFromFour == 0 && remainderFromOneHundred > 0) {
+            leapYear = true;
+        } else {
+            leapYear = false;
+        }
+
+        if (leapYear) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 4");
+
+        int deliveryDistance = 95; // km
+        byte deliveryTime;
+
+        if (deliveryDistance < 20) {
+            deliveryTime = 1;
+        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
+            deliveryTime = 2;
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            deliveryTime = 3;
+        } else {
+            deliveryTime = 0;
+        }
+
+        if (deliveryTime == 0) {
+            System.out.println("Свыше 100 км доставки нет");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryTime);
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 5");
+
+        byte monthNumber = 12;
+
+        switch (monthNumber) {
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("принадлежит к сезону зима");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                System.out.println("принадлежит к сезону весна");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("принадлежит к сезону лето");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("принадлежит к сезону осень");
+                break;
+            default:
+                throw new RuntimeException("Номер месяца меньше 1 или больше 12, программа не будет выполняться");
         }
 
         System.out.println();
