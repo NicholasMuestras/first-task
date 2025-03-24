@@ -676,5 +676,27 @@ public class Main {
         System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
 
         System.out.println();
+
+        System.out.println("TASK 5");
+
+        accountOfVasya = 15000;
+        goalOfVasya = 12000000;
+        incrementInPercent = 17;
+        monthCounter = 0;
+
+        while (accountOfVasya < goalOfVasya) {
+            monthCounter++;
+            accountOfVasya = accountOfVasya + (accountOfVasya / 100 * incrementInPercent);
+
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", баланс на счёте " + accountOfVasya);
+            }
+        }
+
+        System.out.println();
+        System.out.print("Несчастному Васе придётся копить " + monthCounter + " месяцев");
+        System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
+
+        System.out.println();
     }
 }
