@@ -515,5 +515,99 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 6 ---
+
+        System.out.println("TASK 1");
+
+        for (var i = 1; i <= 10; i++) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+
+        System.out.println("TASK 2");
+
+        for (var i = 10; i > 0; i--) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        for (var i = 0; i < 17; i += 2) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 4");
+
+        for (var i = 10; i >= -10; i--) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 5");
+
+        for (var i = 1904; i <= 2096; i += 4) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 6");
+
+        for (var i = 0; i <= 98; i += 7) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 7");
+
+        for (var i = 1; i <= 512; i *= 2) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 8");
+
+        int sum = 0;
+
+        for (var i = 1; i <= 12; i++) {
+            sum += 29000;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 9");
+
+        int sumInBank = 0;
+
+        for (var i = 1; i <= 12; i++) {
+            sumInBank = sumInBank + sumInBank / 100 + 29000;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sumInBank + " рублей");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 10");
+
+        int result;
+
+        for (var i = 1; i <= 10; i++) {
+
+            result = i * 2;
+
+            System.out.println("2*" + i + "=" + result);
+        }
+
+        System.out.println();
     }
 }
