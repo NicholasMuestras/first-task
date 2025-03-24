@@ -566,5 +566,13 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 7");
+
+        for(var i = 1; i <= 512; i *= 2) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
     }
 }
