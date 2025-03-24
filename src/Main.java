@@ -585,5 +585,16 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 9");
+
+        int sumInBank = 0;
+
+        for(var i = 1; i <= 12; i++) {
+            sumInBank = sumInBank + sumInBank / 100 + 29000;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sumInBank + " рублей");
+        }
+
+        System.out.println();
     }
 }
