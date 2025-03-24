@@ -736,5 +736,23 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 8");
+
+        int orbitPeriodYears = 79;
+        int currentYear = 2025;
+        int minYearLimit;
+        int maxYearLimit;
+
+        minYearLimit = currentYear - 200;
+        maxYearLimit = currentYear + 100;
+
+        for (currentYear = 0; currentYear <= maxYearLimit; currentYear += orbitPeriodYears) {
+            if (currentYear >= minYearLimit) {
+                System.out.println(currentYear);
+            }
+        }
+
+        System.out.println();
     }
 }
