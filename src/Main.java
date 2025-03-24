@@ -515,5 +515,15 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 6 ---
+
+        System.out.println("TASK 1");
+
+        for(var i = 1; i <= 10; i++) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
     }
 }
