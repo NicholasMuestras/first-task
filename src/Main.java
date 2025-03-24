@@ -574,5 +574,16 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 8");
+
+        int sum = 0;
+
+        for(var i = 1; i <= 12; i++) {
+            sum += 29000;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + sum + " рублей");
+        }
+
+        System.out.println();
     }
 }
