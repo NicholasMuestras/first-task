@@ -609,5 +609,21 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 7 ---
+
+        System.out.println("TASK 1");
+        var sumCurrent = 0;
+        var sumGoal = 2459000;
+        var sumIncrement = 15000;
+        var monthNum = 0;
+
+        while (sumCurrent < sumGoal) {
+            sumCurrent = sumCurrent + sumIncrement;
+            monthNum++;
+        }
+
+        System.out.println("Месяц " + monthNum + ", сумма накоплений равна " + sumGoal + " рублей");
+        System.out.println();
     }
 }
