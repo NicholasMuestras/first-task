@@ -721,5 +721,20 @@ public class Main {
         System.out.println();
         System.out.println("Вася решил копить " + periodYears + " лет и соберёт сумму в " + longTermAccount + " рублей");
         System.out.println();
+
+        System.out.println("TASK 7");
+
+        int dayAsFirstFriday = 5;   // available values: 1-7
+        byte dayCurrent;            // this variable created to avoid the dayAsFirstFriday changing according the task
+        byte daysInMonth = 31;
+
+        dayCurrent = (byte) dayAsFirstFriday;
+
+        while (dayCurrent <= daysInMonth) {
+            System.out.println("Сегодня пятница, " + dayCurrent + "-е число. Необходимо подготовить отчёт.");
+            dayCurrent += 7;
+        }
+
+        System.out.println();
     }
 }
