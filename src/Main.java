@@ -641,5 +641,20 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 3");
+
+        var population = 12000000;
+        var incrementPerThousand = 17;
+        var decrementPerThousand = 8;
+        var periodInYears = 10;
+
+        for (var i = 1; i <= periodInYears; i++) {
+            population = population + (population / 1000 * incrementPerThousand) - (population / 1000 * decrementPerThousand);
+
+            System.out.println("Год " + i + ", численность населения составляет " + population);
+        }
+
+        System.out.println();
     }
 }
