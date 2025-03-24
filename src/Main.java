@@ -698,5 +698,28 @@ public class Main {
         System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
 
         System.out.println();
+
+        System.out.println("TASK 6");
+
+        byte periodYears = 9;
+        int periodMonths;
+        long longTermAccount = 15000L;
+        byte incrementPerMonthInPercent = 17;
+        monthCounter = 0;
+
+        periodMonths = periodYears * 12;
+
+        while (monthCounter < periodMonths) {
+            monthCounter++;
+            longTermAccount = longTermAccount + (longTermAccount / 100 * incrementPerMonthInPercent);
+
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", баланс на счёте " + longTermAccount);
+            }
+        }
+
+        System.out.println();
+        System.out.println("Вася решил копить " + periodYears + " лет и соберёт сумму в " + longTermAccount + " рублей");
+        System.out.println();
     }
 }
