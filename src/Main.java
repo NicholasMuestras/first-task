@@ -656,5 +656,25 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        var accountOfVasya = 15000;
+        var goalOfVasya = 12000000;
+        var incrementInPercent = 17;
+        var monthCounter = 0;
+
+        while (accountOfVasya < goalOfVasya) {
+            monthCounter++;
+            accountOfVasya = accountOfVasya + (accountOfVasya / 100 * incrementInPercent);
+
+            System.out.println("Месяц " + monthCounter + ", баланс на счёте " + accountOfVasya);
+        }
+
+        System.out.println();
+        System.out.print("Несчастному Васе придётся копить " + monthCounter + " месяцев");
+        System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
+
+        System.out.println();
     }
 }
