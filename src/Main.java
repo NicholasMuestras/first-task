@@ -558,5 +558,13 @@ public class Main {
         }
 
         System.out.println();
+
+        System.out.println("TASK 6");
+
+        for(var i = 0; i <= 98; i += 7) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
     }
 }
