@@ -625,5 +625,21 @@ public class Main {
 
         System.out.println("Месяц " + monthNum + ", сумма накоплений равна " + sumGoal + " рублей");
         System.out.println();
+
+        System.out.println("TASK 2");
+        var someCounterOne = 0;
+
+        while (someCounterOne < 10) {
+            someCounterOne++;
+            System.out.print(someCounterOne + " ");
+        }
+
+        System.out.println();
+
+        for (; someCounterOne > 0; someCounterOne--) {
+            System.out.print(someCounterOne + " ");
+        }
+
+        System.out.println();
     }
 }
