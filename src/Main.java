@@ -525,5 +525,14 @@ public class Main {
         }
 
         System.out.println();
+
+
+        System.out.println("TASK 2");
+
+        for(var i = 10; i > 0; i--) {
+            System.out.print(i + ", ");
+        }
+
+        System.out.println();
     }
 }
