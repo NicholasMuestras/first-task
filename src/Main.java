@@ -910,5 +910,21 @@ public class Main {
 
         System.out.println("Средняя сумма трат за неделю составила " + averagePayment + " рублей");
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char buffer;
+        int halfLengthOfArray = reverseFullName.length / 2;
+
+        for (int i = 0; i < halfLengthOfArray; i++) {
+
+            buffer = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
+            reverseFullName[reverseFullName.length - 1 - i] = buffer;
+        }
+
+        System.out.println(Arrays.toString(reverseFullName));
+        System.out.println();
     }
 }
