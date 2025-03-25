@@ -609,5 +609,150 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 7 ---
+
+        System.out.println("TASK 1");
+        var sumCurrent = 0;
+        var sumGoal = 2459000;
+        var sumIncrement = 15000;
+        var monthNum = 0;
+
+        while (sumCurrent < sumGoal) {
+            sumCurrent = sumCurrent + sumIncrement;
+            monthNum++;
+        }
+
+        System.out.println("Месяц " + monthNum + ", сумма накоплений равна " + sumGoal + " рублей");
+        System.out.println();
+
+        System.out.println("TASK 2");
+        var someCounterOne = 0;
+
+        while (someCounterOne < 10) {
+            someCounterOne++;
+            System.out.print(someCounterOne + " ");
+        }
+
+        System.out.println();
+
+        for (; someCounterOne > 0; someCounterOne--) {
+            System.out.print(someCounterOne + " ");
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        var population = 12000000;
+        var incrementPerThousand = 17;
+        var decrementPerThousand = 8;
+        var periodInYears = 10;
+
+        for (var i = 1; i <= periodInYears; i++) {
+            population = population + (population / 1000 * incrementPerThousand) - (population / 1000 * decrementPerThousand);
+
+            System.out.println("Год " + i + ", численность населения составляет " + population);
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 4");
+
+        var accountOfVasya = 15000;
+        var goalOfVasya = 12000000;
+        var incrementInPercent = 17;
+        var monthCounter = 0;
+
+        while (accountOfVasya < goalOfVasya) {
+            monthCounter++;
+            accountOfVasya = accountOfVasya + (accountOfVasya / 100 * incrementInPercent);
+
+            System.out.println("Месяц " + monthCounter + ", баланс на счёте " + accountOfVasya);
+        }
+
+        System.out.println();
+        System.out.print("Несчастному Васе придётся копить " + monthCounter + " месяцев");
+        System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
+
+        System.out.println();
+
+        System.out.println("TASK 5");
+
+        accountOfVasya = 15000;
+        goalOfVasya = 12000000;
+        incrementInPercent = 17;
+        monthCounter = 0;
+
+        while (accountOfVasya < goalOfVasya) {
+            monthCounter++;
+            accountOfVasya = accountOfVasya + (accountOfVasya / 100 * incrementInPercent);
+
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", баланс на счёте " + accountOfVasya);
+            }
+        }
+
+        System.out.println();
+        System.out.print("Несчастному Васе придётся копить " + monthCounter + " месяцев");
+        System.out.println(", чтобы собрать сумму в " + goalOfVasya + " рублей");
+
+        System.out.println();
+
+        System.out.println("TASK 6");
+
+        byte periodYears = 9;
+        int periodMonths;
+        long longTermAccount = 15000L;
+        byte incrementPerMonthInPercent = 17;
+        monthCounter = 0;
+
+        periodMonths = periodYears * 12;
+
+        while (monthCounter < periodMonths) {
+            monthCounter++;
+            longTermAccount = longTermAccount + (longTermAccount / 100 * incrementPerMonthInPercent);
+
+            if (monthCounter % 6 == 0) {
+                System.out.println("Месяц " + monthCounter + ", баланс на счёте " + longTermAccount);
+            }
+        }
+
+        System.out.println();
+        System.out.println("Вася решил копить " + periodYears + " лет и соберёт сумму в " + longTermAccount + " рублей");
+        System.out.println();
+
+        System.out.println("TASK 7");
+
+        int dayAsFirstFriday = 5;   // available values: 1-7
+        byte dayCurrent;            // this variable created to avoid the dayAsFirstFriday changing according the task
+        byte daysInMonth = 31;
+
+        dayCurrent = (byte) dayAsFirstFriday;
+
+        while (dayCurrent <= daysInMonth) {
+            System.out.println("Сегодня пятница, " + dayCurrent + "-е число. Необходимо подготовить отчёт.");
+            dayCurrent += 7;
+        }
+
+        System.out.println();
+
+        System.out.println("TASK 8");
+
+        int orbitPeriodYears = 79;
+        int currentYear = 2025;
+        int minYearLimit;
+        int maxYearLimit;
+
+        minYearLimit = currentYear - 200;
+        maxYearLimit = currentYear + 100;
+
+        for (currentYear = 0; currentYear <= maxYearLimit; currentYear += orbitPeriodYears) {
+            if (currentYear >= minYearLimit) {
+                System.out.println(currentYear);
+            }
+        }
+
+        System.out.println();
     }
 }
