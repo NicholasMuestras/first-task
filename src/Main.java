@@ -777,5 +777,38 @@ public class Main {
         System.out.println(Arrays.toString(arrayThree));
 
         System.out.println();
+
+        System.out.println("TASK 2");
+
+        for (var i = 0; i < arrayOne.length; i++) {
+            if (i == 0) {
+                System.out.print(arrayOne[i]);
+            } else {
+                System.out.print(", " + arrayOne[i]);
+            }
+        }
+
+        System.out.println();
+
+        for (var i = 0; i < arrayTwo.length; i++) {
+            if (i == 0) {
+                System.out.print(arrayTwo[i]);
+            } else {
+                System.out.print(", " + arrayTwo[i]);
+            }
+        }
+
+        System.out.println();
+
+        for (var i = 0; i < arrayThree.length; i++) {
+            if (i == 0) {
+                System.out.print(arrayThree[i]);
+            } else {
+                System.out.print(", " + arrayThree[i]);
+            }
+        }
+
+        System.out.println();
+        System.out.println();
     }
 }
