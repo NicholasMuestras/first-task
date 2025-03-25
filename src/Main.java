@@ -843,5 +843,22 @@ public class Main {
 
         System.out.println();
         System.out.println();
+
+        System.out.println("TASK 4");
+
+        for (var i = 0; i < arrayOne.length; i++) {
+
+            if (arrayOne[i] % 2 != 0) {
+                arrayOne[i]++;
+            }
+
+            if (i == 0) {
+                System.out.print(arrayOne[i]);
+            } else {
+                System.out.print(", " + arrayOne[i]);
+            }
+        }
+
+        System.out.println();
     }
 }
