@@ -810,5 +810,38 @@ public class Main {
 
         System.out.println();
         System.out.println();
+
+        System.out.println("TASK 3");
+
+        for (var i = arrayOne.length - 1; i >= 0; i--) {
+            if (i == arrayOne.length - 1) {
+                System.out.print(arrayOne[i]);
+            } else {
+                System.out.print(", " + arrayOne[i]);
+            }
+        }
+
+        System.out.println();
+
+        for (var i = arrayTwo.length - 1; i >= 0; i--) {
+            if (i == arrayTwo.length - 1) {
+                System.out.print(arrayTwo[i]);
+            } else {
+                System.out.print(", " + arrayTwo[i]);
+            }
+        }
+
+        System.out.println();
+
+        for (var i = arrayThree.length - 1; i >= 0; i--) {
+            if (i == arrayThree.length - 1) {
+                System.out.print(arrayThree[i]);
+            } else {
+                System.out.print(", " + arrayThree[i]);
+            }
+        }
+
+        System.out.println();
+        System.out.println();
     }
 }
