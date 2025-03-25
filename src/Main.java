@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -752,6 +754,27 @@ public class Main {
                 System.out.println(currentYear);
             }
         }
+
+        System.out.println();
+        System.out.println();
+
+        // --- Homework 8 ---
+
+        System.out.println("TASK 1");
+
+        int[] arrayOne = new int[3];
+
+        arrayOne[0] = 1;
+        arrayOne[1] = 2;
+        arrayOne[2] = 3;
+
+        float[] arrayTwo = {1.57F, 7.654F, 9.986F};
+
+        Object[] arrayThree = {new Object(), new Object()};
+
+        System.out.println(Arrays.toString(arrayOne));
+        System.out.println(Arrays.toString(arrayTwo));
+        System.out.println(Arrays.toString(arrayThree));
 
         System.out.println();
     }
