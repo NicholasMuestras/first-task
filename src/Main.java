@@ -895,5 +895,20 @@ public class Main {
         System.out.print("Минимальная сумма трат за неделю составила " + minPayment + " рублей.");
         System.out.println(" Максимальная сумма трат за неделю составила " + maxPayment + " рублей");
         System.out.println();
+
+        System.out.println("TASK 3");
+
+        int[] paymentsByWeeks = {10000, 800, 740, 120, 2};
+        int sumOfPayments = 0;
+        float averagePayment;
+
+        for (int paymentByWeek : paymentsByWeeks) {
+            sumOfPayments += paymentByWeek;
+        }
+
+        averagePayment = (float) sumOfPayments / paymentsByWeeks.length;
+
+        System.out.println("Средняя сумма трат за неделю составила " + averagePayment + " рублей");
+        System.out.println();
     }
 }
