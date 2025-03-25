@@ -875,5 +875,25 @@ public class Main {
 
         System.out.println("Сумма трат за месяц составила " + sumOfTransactions + " рублей");
         System.out.println();
+
+        System.out.println("TASK 2");
+
+        int[] somePayments = {200, 10, 50, 75, 580};
+        int maxPayment = 0;
+        int minPayment = 0;
+
+        for (int somePayment : somePayments) {
+            if (somePayment > maxPayment) {
+                maxPayment = somePayment;
+            }
+
+            if (somePayment < minPayment || minPayment == 0) {
+                minPayment = somePayment;
+            }
+        }
+
+        System.out.print("Минимальная сумма трат за неделю составила " + minPayment + " рублей.");
+        System.out.println(" Максимальная сумма трат за неделю составила " + maxPayment + " рублей");
+        System.out.println();
     }
 }
