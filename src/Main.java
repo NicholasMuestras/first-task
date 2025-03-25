@@ -860,5 +860,20 @@ public class Main {
         }
 
         System.out.println();
+        System.out.println();
+
+        // --- Homework 9 ---
+
+        System.out.println("TASK 1");
+
+        int[] salaryTransactions = {10000, 15000, 13000};
+        int sumOfTransactions = 0;
+
+        for (int transaction : salaryTransactions) {
+            sumOfTransactions += transaction;
+        }
+
+        System.out.println("Сумма трат за месяц составила " + sumOfTransactions + " рублей");
+        System.out.println();
     }
 }
