@@ -955,5 +955,42 @@ public class Main {
 
         System.out.println("Данные Ф. И. О. сотрудника - " + fullName);
         System.out.println();
+
+
+        // --- Homework 11 ---
+
+        System.out.println("Task 1");
+        checkLeapYear(1984);
+        checkLeapYear(2021);
+        System.out.println();
+    }
+
+    public static void checkLeapYear(int year) {
+        boolean leapYear;
+        int remainderFromFourHundred;
+        int remainderFromOneHundred;
+        int remainderFromFour;
+
+        remainderFromFourHundred = year % 400;
+        remainderFromOneHundred = year % 100;
+        remainderFromFour = year % 4;
+
+        if (year < 1584) {
+            leapYear = false;
+        } else if (remainderFromFourHundred == 0) {
+            leapYear = true;
+        } else if (remainderFromOneHundred == 0 && remainderFromFourHundred > 0) {
+            leapYear = false;
+        } else if (remainderFromFour == 0 && remainderFromOneHundred > 0) {
+            leapYear = true;
+        } else {
+            leapYear = false;
+        }
+
+        if (leapYear) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
     }
 }
