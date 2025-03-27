@@ -971,6 +971,17 @@ public class Main {
         offerAppVersion((byte) 1, (short) 2014);
         offerAppVersion((byte) 1, (short) 2025);
         System.out.println();
+
+        System.out.println("Task 3");
+        int deliveryDays = calculateDeliveryInDays(55);
+
+        if (deliveryDays == 0) {
+            System.out.println("Свыше 100 км доставки нет");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryDays);
+        }
+
+        System.out.println();
     }
 
     public static void checkLeapYear(int year) {
@@ -1015,5 +1026,25 @@ public class Main {
         } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
+    }
+
+    /**
+     * @param deliveryDistance km
+     * @return 0 - delivery unavailable
+     */
+    public static int calculateDeliveryInDays(int deliveryDistance) {
+        if (deliveryDistance < 20) {
+            return 1;
+        }
+
+        if (deliveryDistance < 60) {
+            return 2;
+        }
+
+        if (deliveryDistance < 100) {
+            return 3;
+        }
+
+        return 0;
     }
 }
