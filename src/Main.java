@@ -940,5 +940,10 @@ public class Main {
 
         System.out.println("Ф. И. О. сотрудника - " + fullName);
         System.out.println();
+
+        System.out.println("TASK 2");
+
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчёта - " + fullName.toUpperCase());
+        System.out.println();
     }
 }
