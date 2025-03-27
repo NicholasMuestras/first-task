@@ -931,12 +931,12 @@ public class Main {
 
         System.out.println("TASK 1");
 
-        String firstName = "Ivanov";
+        String firstName = "Ivan";
         String middleName = "Ivanovich";
-        String lastName = "Ivan";
+        String lastName = "Ivanov";
         String fullName;
 
-        fullName = firstName + " " + lastName + " " + middleName;
+        fullName = lastName + " " + firstName + " " + middleName;
 
         System.out.println("Ф. И. О. сотрудника - " + fullName);
         System.out.println();
