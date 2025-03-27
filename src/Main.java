@@ -945,5 +945,15 @@ public class Main {
 
         System.out.println("Данные Ф. И. О. сотрудника для заполнения отчёта - " + fullName.toUpperCase());
         System.out.println();
+
+        System.out.println("TASK 3");
+
+        fullName = "Иванов Семён Семёнович";
+
+        fullName = fullName.replace('ё', 'е');
+        fullName = fullName.replace('Ё', 'Е');
+
+        System.out.println("Данные Ф. И. О. сотрудника - " + fullName);
+        System.out.println();
     }
 }
