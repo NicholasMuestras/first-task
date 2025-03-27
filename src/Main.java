@@ -860,5 +860,71 @@ public class Main {
         }
 
         System.out.println();
+        System.out.println();
+
+        // --- Homework 9 ---
+
+        System.out.println("TASK 1");
+
+        int[] salaryTransactions = {10000, 15000, 13000};
+        int sumOfTransactions = 0;
+
+        for (int transaction : salaryTransactions) {
+            sumOfTransactions += transaction;
+        }
+
+        System.out.println("Сумма трат за месяц составила " + sumOfTransactions + " рублей");
+        System.out.println();
+
+        System.out.println("TASK 2");
+
+        int[] somePayments = {200, 10, 50, 75, 580};
+        int maxPayment = 0;
+        int minPayment = 0;
+
+        for (int somePayment : somePayments) {
+            if (somePayment > maxPayment) {
+                maxPayment = somePayment;
+            }
+
+            if (somePayment < minPayment || minPayment == 0) {
+                minPayment = somePayment;
+            }
+        }
+
+        System.out.print("Минимальная сумма трат за неделю составила " + minPayment + " рублей.");
+        System.out.println(" Максимальная сумма трат за неделю составила " + maxPayment + " рублей");
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        int[] paymentsByWeeks = {10000, 800, 740, 120, 2};
+        int sumOfPayments = 0;
+        float averagePayment;
+
+        for (int paymentByWeek : paymentsByWeeks) {
+            sumOfPayments += paymentByWeek;
+        }
+
+        averagePayment = (float) sumOfPayments / paymentsByWeeks.length;
+
+        System.out.println("Средняя сумма трат за неделю составила " + averagePayment + " рублей");
+        System.out.println();
+
+        System.out.println("TASK 4");
+
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char buffer;
+        int halfLengthOfArray = reverseFullName.length / 2;
+
+        for (int i = 0; i < halfLengthOfArray; i++) {
+
+            buffer = reverseFullName[i];
+            reverseFullName[i] = reverseFullName[reverseFullName.length - 1 - i];
+            reverseFullName[reverseFullName.length - 1 - i] = buffer;
+        }
+
+        System.out.println(Arrays.toString(reverseFullName));
+        System.out.println();
     }
 }
