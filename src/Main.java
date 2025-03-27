@@ -926,5 +926,34 @@ public class Main {
 
         System.out.println(Arrays.toString(reverseFullName));
         System.out.println();
+
+        // --- Homework 10 ---
+
+        System.out.println("TASK 1");
+
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName;
+
+        fullName = lastName + " " + firstName + " " + middleName;
+
+        System.out.println("Ф. И. О. сотрудника - " + fullName);
+        System.out.println();
+
+        System.out.println("TASK 2");
+
+        System.out.println("Данные Ф. И. О. сотрудника для заполнения отчёта - " + fullName.toUpperCase());
+        System.out.println();
+
+        System.out.println("TASK 3");
+
+        fullName = "Иванов Семён Семёнович";
+
+        fullName = fullName.replace('ё', 'е');
+        fullName = fullName.replace('Ё', 'Е');
+
+        System.out.println("Данные Ф. И. О. сотрудника - " + fullName);
+        System.out.println();
     }
 }
