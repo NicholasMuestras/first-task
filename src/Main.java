@@ -926,5 +926,19 @@ public class Main {
 
         System.out.println(Arrays.toString(reverseFullName));
         System.out.println();
+
+        // --- Homework 10 ---
+
+        System.out.println("TASK 1");
+
+        String firstName = "Ivanov";
+        String middleName = "Ivanovich";
+        String lastName = "Ivan";
+        String fullName;
+
+        fullName = firstName + " " + lastName + " " + middleName;
+
+        System.out.println("Ф. И. О. сотрудника - " + fullName);
+        System.out.println();
     }
 }
