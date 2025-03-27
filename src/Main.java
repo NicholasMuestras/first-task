@@ -982,6 +982,20 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 12 ---
+
+        Book[] books = new Book[2];
+        books[0] = new Book("Все съедобные грибы", 2001, new Author("Иван", "Иванов"));
+        books[1] = new Book("Все съедобные грибы. Издание исправленное и дополненное.", 2001, new Author("Дмитрий", "Иванов"));
+
+        books[1].setIssueYear(2002);
+
+        for (Book book : books) {
+            System.out.println("Издание: " + book.getTitle() + " " + book.getIssueYear() + " " + book.getAuthor().getFullName());
+        }
+
+        System.out.println();
     }
 
     public static void checkLeapYear(int year) {
