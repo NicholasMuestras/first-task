@@ -996,6 +996,14 @@ public class Main {
         }
 
         System.out.println();
+
+        // --- Homework 13 ---
+
+        for (Book book : books) {
+            System.out.println(book.toString());
+        }
+
+        System.out.println();
     }
 
     public static void checkLeapYear(int year) {
