@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -963,6 +964,13 @@ public class Main {
         checkLeapYear(1984);
         checkLeapYear(2021);
         System.out.println();
+
+        System.out.println("Task 2");
+        offerAppVersion((byte) 0, (short) 2013);
+        offerAppVersion((byte) 0, (short) 2025);
+        offerAppVersion((byte) 1, (short) 2014);
+        offerAppVersion((byte) 1, (short) 2025);
+        System.out.println();
     }
 
     public static void checkLeapYear(int year) {
@@ -991,6 +999,21 @@ public class Main {
             System.out.println(year + " год является високосным");
         } else {
             System.out.println(year + " год не является високосным");
+        }
+    }
+
+    /**
+     * @param mobileClientOS 0 — iOS, 1 — Android
+     */
+    public static void offerAppVersion(byte mobileClientOS, short clientDeviceYear) {
+        if (mobileClientOS == 0 && clientDeviceYear < LocalDate.now().getYear()) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 1 && clientDeviceYear < LocalDate.now().getYear()) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
     }
 }
