@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -955,5 +956,95 @@ public class Main {
 
         System.out.println("Данные Ф. И. О. сотрудника - " + fullName);
         System.out.println();
+
+
+        // --- Homework 11 ---
+
+        System.out.println("Task 1");
+        checkLeapYear(1984);
+        checkLeapYear(2021);
+        System.out.println();
+
+        System.out.println("Task 2");
+        offerAppVersion((byte) 0, (short) 2013);
+        offerAppVersion((byte) 0, (short) 2025);
+        offerAppVersion((byte) 1, (short) 2014);
+        offerAppVersion((byte) 1, (short) 2025);
+        System.out.println();
+
+        System.out.println("Task 3");
+        int deliveryDays = calculateDeliveryInDays(55);
+
+        if (deliveryDays == 0) {
+            System.out.println("Свыше 100 км доставки нет");
+        } else {
+            System.out.println("Потребуется дней: " + deliveryDays);
+        }
+
+        System.out.println();
+    }
+
+    public static void checkLeapYear(int year) {
+        boolean leapYear;
+        int remainderFromFourHundred;
+        int remainderFromOneHundred;
+        int remainderFromFour;
+
+        remainderFromFourHundred = year % 400;
+        remainderFromOneHundred = year % 100;
+        remainderFromFour = year % 4;
+
+        if (year < 1584) {
+            leapYear = false;
+        } else if (remainderFromFourHundred == 0) {
+            leapYear = true;
+        } else if (remainderFromOneHundred == 0 && remainderFromFourHundred > 0) {
+            leapYear = false;
+        } else if (remainderFromFour == 0 && remainderFromOneHundred > 0) {
+            leapYear = true;
+        } else {
+            leapYear = false;
+        }
+
+        if (leapYear) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год не является високосным");
+        }
+    }
+
+    /**
+     * @param mobileClientOS 0 — iOS, 1 — Android
+     */
+    public static void offerAppVersion(byte mobileClientOS, short clientDeviceYear) {
+        if (mobileClientOS == 0 && clientDeviceYear < LocalDate.now().getYear()) {
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (mobileClientOS == 1 && clientDeviceYear < LocalDate.now().getYear()) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
+    }
+
+    /**
+     * @param deliveryDistance km
+     * @return 0 - delivery unavailable
+     */
+    public static int calculateDeliveryInDays(int deliveryDistance) {
+        if (deliveryDistance < 20) {
+            return 1;
+        }
+
+        if (deliveryDistance < 60) {
+            return 2;
+        }
+
+        if (deliveryDistance < 100) {
+            return 3;
+        }
+
+        return 0;
     }
 }
